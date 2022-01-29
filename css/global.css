@@ -1,7 +1,3 @@
-* {
-    /* background: chocolate; */
-}
-
 body {
     font-family: "Fira Sans";
     margin: 0;
@@ -45,7 +41,6 @@ a {
     opacity: 0;
     transform: translate3d(0, 40px, 0);
     transition: .3s;
-
 }
 
 .js .js-scroll.ativo {

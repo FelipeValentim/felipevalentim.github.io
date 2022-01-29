@@ -4,3 +4,25 @@
 @import url("./experiencia.css");
 @import url("./formacao.css");
 @import url("./footer.css");
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../fonts/FiraSans-Bold.ttf');
+    font-weight: bold;
+}
