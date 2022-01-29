@@ -1,4 +1,4 @@
-*{
+* {
     /* background: chocolate; */
 }
 
@@ -38,4 +38,18 @@ a {
     .subtitulo {
         font-size: 10rem;
     }
+}
+
+
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+    transition: .3s;
+
+}
+
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
 }
