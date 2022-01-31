@@ -8,21 +8,25 @@
 @font-face {
     font-family: 'Playfair Display';
     src: url('../fonts/PlayfairDisplay-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Playfair Display';
     src: url('../fonts/PlayfairDisplay-Bold.ttf');
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Fira Sans';
     src: url('../fonts/FiraSans-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Fira Sans';
     src: url('../fonts/FiraSans-Bold.ttf');
     font-weight: bold;
+    font-display: swap;
 }
