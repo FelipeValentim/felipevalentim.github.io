@@ -30,7 +30,19 @@
   border-radius: 1rem;
   padding: 1.2rem 1rem;
   display: flex;
-  gap: 1.2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-bar .previous-next span {
+  padding: 0.5rem 0.8em;
+  border-radius: 0.2rem;
+  text-align: center;
+  transition: all ease-in-out 0.2s;
+}
+
+.nav-bar .previous-next span:hover {
+  background-color: #701cda;
 }
 
 .nav-bar .menu span {

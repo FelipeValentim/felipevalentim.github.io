@@ -16,9 +16,6 @@
   gap: 2rem;
 }
 
-.about .skills h1 {
-  font-size: 2.5rem;
-}
 .about .skills p {
   font-size: 1.1rem;
 }
@@ -41,4 +38,38 @@
   padding: 0.5rem 0.8rem;
   border-radius: 0.4rem;
   cursor: pointer;
+}
+
+.services {
+  margin-top: 5rem;
+  grid-column: 1 / -1;
+}
+
+.services h1 {
+  text-align: center;
+}
+
+.services .services-items {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.services .services-items .service-item {
+  background-color: #202026;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+
+.services .services-items .service-item.web svg {
+  color: #9774fa;
+}
+
+.services .services-items .service-item.mobile svg {
+  color: #2796e2;
+}
+
+.services .services-items .service-item.database svg {
+  color: #ed7256;
 }
