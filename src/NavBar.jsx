@@ -1,11 +1,10 @@
-import React from "react";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
   faGraduationCap,
-  faPerson,
+  faHome,
   faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +13,9 @@ const NavBar = () => {
   return (
     <div className="nav-bar">
       <div className="menu">
+        <span>
+          <FontAwesomeIcon icon={faHome} />
+        </span>
         <span>
           <FontAwesomeIcon icon={faUser} />
         </span>

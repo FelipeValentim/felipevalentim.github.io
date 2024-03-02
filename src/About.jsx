@@ -1,48 +1,39 @@
 import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import me from "/me.jpg";
+import programming from "/programming.svg";
 import "./About.css";
-import {
-  faEnvelope,
-  faLocationDot,
-  faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 library.add(faGithub, faFacebook);
 
 const About = () => {
   return (
     <div className="about">
-      <div className="info">
-        <span className="presentation madimi-one-regular">Olá, meu nome é</span>
-        <span className="name">Felipe Valentim</span>
-        <span className="profession">Desenvolvedor Full-Stack</span>
-        <div className="personal-info">
-          <span className="email">
-            <FontAwesomeIcon icon={faEnvelope} />
-            felipevalentimdasilva@gmail.com
-          </span>
-          <span className="cellphone">
-            <FontAwesomeIcon icon={faPhone} />
-            +55 (21) 99785-6492
-          </span>
-          <span className="address">
-            <FontAwesomeIcon icon={faLocationDot} /> Rio de Janeiro, RJ, Brasil
-          </span>
-        </div>
-
-        <div className="social-media">
-          <span>
-            <FontAwesomeIcon icon={["fab", "github"]} />
-          </span>
-          <span>
-            <FontAwesomeIcon icon={["fab", "facebook"]} />
-          </span>
-        </div>
+      <div className="programming-image">
+        <img src={programming} />
       </div>
-      <div className="photo-container">
-        <img src={me} />
+      <div className="skills">
+        <h1>Sobre mim</h1>
+        <p>
+          Olá, sou um desenvolvedor Full-Stack. Tenho experiência com tanto com
+          desenvolvimento backend, quanto em frontend. Sou bom em
+        </p>
+        <ul className="competences">
+          <li>html</li>
+          <li>css</li>
+          <li>.net</li>
+          <li>javascript</li>
+          <li>react</li>
+          <li>jquery</li>
+          <li>c-sharp</li>
+          <li>typescript</li>
+        </ul>
+        <div className="download-cv">
+          Baixar Currículo &nbsp;&nbsp;
+          <FontAwesomeIcon icon={faDownload} />
+        </div>
       </div>
     </div>
   );

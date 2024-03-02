@@ -1,6 +1,6 @@
 .nav-bar {
-  position: absolute;
-  right: 0;
+  position: fixed;
+  right: 5%;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -31,4 +31,9 @@
   padding: 1.2rem 1rem;
   display: flex;
   gap: 1.2rem;
+}
+
+.nav-bar .menu span {
+  display: flex;
+  justify-content: center;
 }
