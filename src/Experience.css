@@ -1,0 +1,45 @@
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 20rem;
+}
+
+.experience > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .experience-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #202026;
+  height: 100%;
+}
+
+.experience .experience-section h2 span {
+  color: #9774fa;
+  font-style: italic;
+}
+
+.experience .experience-section h3 {
+  color: #9774fa;
+}
+
+.experience .experience-section .responsibilities {
+  margin-top: 1rem;
+}
+
+.experience .experience-section .responsibilities ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.experience .experience-section .responsibilities ul li svg {
+  font-size: 0.6rem;
+}

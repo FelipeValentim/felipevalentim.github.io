@@ -60,6 +60,11 @@
   background-color: #202026;
   padding: 2rem;
   border-radius: 0.4rem;
+  transition: ease-in-out 0.3s all;
+}
+
+.services .services-items .service-item:hover {
+  box-shadow: -0.1rem 0 2rem #000000;
 }
 
 .services .services-items .service-item.web svg {
