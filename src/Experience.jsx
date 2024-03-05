@@ -22,6 +22,23 @@ const Experience = () => {
             computação em nuvem. Determinado a crescer e fazer a diferença,
             estou pronto para embarcar em uma jornada emocionante rumo ao
             sucesso na área da Ciência da Computação enquanto estudo na UERJ.
+            <div className="responsibilities">
+              Responsabilidades:
+              <ul>
+                <li>
+                  <FontAwesomeIcon icon={faCircle} />
+                  Métodos de Busca
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircle} />
+                  Estrutura de Dados
+                </li>
+                <li>
+                  <FontAwesomeIcon icon={faCircle} />
+                  Teste de Software
+                </li>
+              </ul>
+            </div>
           </p>
         </div>
       </div>

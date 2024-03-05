@@ -1,0 +1,41 @@
+.contact {
+  margin-bottom: 20rem;
+}
+
+.contact h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact .communication {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 4rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.contact .communication div {
+  background-color: #202026;
+  padding: 2rem;
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+
+.contact .communication div:hover {
+  box-shadow: -0.1rem 0 2rem #000000;
+}
+
+.contact .communication svg {
+  font-size: 1.3rem;
+  background: transparent;
+  padding: 3rem;
+  border: 2px solid #9774fa;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.contact .communication h2 {
+  margin-bottom: 1rem;
+}

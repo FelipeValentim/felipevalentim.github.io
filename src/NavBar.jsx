@@ -5,9 +5,10 @@ import {
   faChevronRight,
   faGraduationCap,
   faHome,
-  faSuitcase,
+  faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-regular-svg-icons";
 
 const NavBar = () => {
   return (
@@ -23,7 +24,7 @@ const NavBar = () => {
           <FontAwesomeIcon icon={faGraduationCap} />
         </span>
         <span>
-          <FontAwesomeIcon icon={faSuitcase} />
+          <FontAwesomeIcon icon={faEnvelope} />
         </span>
       </div>
 

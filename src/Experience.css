@@ -18,6 +18,11 @@
   padding: 2rem;
   background-color: #202026;
   height: 100%;
+  transition: all ease-in-out 0.3s;
+}
+
+.experience .experience-section:hover {
+  box-shadow: -0.1rem 0 2rem #000000;
 }
 
 .experience .experience-section h2 span {

@@ -3,6 +3,7 @@ import "./App.css";
 import About from "./About";
 import Home from "./Home";
 import Experience from "./Experience";
+import Contact from "./Contact";
 import { useLottie } from "lottie-react";
 import loading from "./loading.json";
 import React from "react";
@@ -32,6 +33,7 @@ function App() {
           <Home />
           <About />
           <Experience />
+          <Contact />
         </div>
       )}
     </div>
