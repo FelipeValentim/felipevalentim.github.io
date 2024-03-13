@@ -10,29 +10,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {} from "@fortawesome/free-regular-svg-icons";
 
-const NavBar = () => {
+// eslint-disable-next-line react/prop-types
+const NavBar = ({ page, setPage }) => {
   return (
     <div className="nav-bar">
       <div className="menu">
-        <span>
+        <span onClick={() => setPage(1)}>
           <FontAwesomeIcon icon={faHome} />
         </span>
-        <span>
+        <span onClick={() => setPage(2)}>
           <FontAwesomeIcon icon={faUser} />
         </span>
-        <span>
+        <span onClick={() => setPage(3)}>
           <FontAwesomeIcon icon={faGraduationCap} />
         </span>
-        <span>
+        <span onClick={() => setPage(4)}>
           <FontAwesomeIcon icon={faEnvelope} />
         </span>
       </div>
 
       <div className="previous-next">
-        <span>
+        <span
+          onClick={() => {
+            if (page > 1) setPage(page - 1);
+          }}
+        >
           <FontAwesomeIcon icon={faChevronLeft} />
         </span>
-        <span>
+        <span
+          onClick={() => {
+            if (page < 4) setPage(page + 1);
+          }}
+        >
           <FontAwesomeIcon icon={faChevronRight} />
         </span>
       </div>
