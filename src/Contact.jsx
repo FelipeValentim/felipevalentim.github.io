@@ -2,8 +2,13 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocation, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Contact.css";
+import Map from "./Map";
 
 const Contact = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="contact">
       <h1>Contate-me</h1>
@@ -25,17 +30,19 @@ const Contact = () => {
           <p>(21) 99785-6492</p>
         </div>
       </div>
-      <div>
+      <div className="report">
         <form className="form">
-          <div>
+          <div className="full-name">
             <input placeholder="Nome" />
             <input placeholder="Sobrenome" />
           </div>
           <input placeholder="Email" />
           <textarea placeholder="Sua mensagem" rows={10} />
-          <button>Enviar</button>
+          <button onClick={sendMail}>Enviar</button>
         </form>
-        <div className="map"></div>
+        <div className="map">
+          <Map />
+        </div>
       </div>
     </div>
   );

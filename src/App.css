@@ -60,6 +60,33 @@ textarea {
   resize: vertical;
 }
 
+input,
+textarea {
+  padding: 1rem;
+  outline: none;
+  border: 0.1rem solid #999999;
+  border-radius: 0.4rem;
+  background-color: transparent;
+}
+
+:is(input, textarea)::placeholder {
+  font-size: 1rem;
+  font-family: "roboto";
+  font-weight: bold;
+  color: #999999;
+}
+
+button {
+  background-color: #701cda;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
