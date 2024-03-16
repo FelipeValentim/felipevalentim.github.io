@@ -1,4 +1,9 @@
-import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faFacebook,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import me from "/me.jpg";
@@ -10,11 +15,11 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faGithub, faFacebook);
+library.add(faGithub, faFacebook, faLinkedin, faInstagram);
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home fade">
       <div className="info">
         <span className="presentation madimi-one-regular">Olá, meu nome é</span>
         <span className="name">Felipe Valentim</span>
@@ -34,11 +39,29 @@ const Home = () => {
         </div>
 
         <div className="social-media">
-          <span>
+          <span
+            onClick={() =>
+              window.open("https://github.com/FelipeValentim", "__blank")
+            }
+          >
             <FontAwesomeIcon icon={["fab", "github"]} />
           </span>
-          <span>
-            <FontAwesomeIcon icon={["fab", "facebook"]} />
+          <span
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/felipe-valentim/",
+                "__blank"
+              )
+            }
+          >
+            <FontAwesomeIcon icon={["fab", "linkedin"]} />
+          </span>
+          <span
+            onClick={() =>
+              window.open("https://www.instagram.com/sahrutar/", "__blank")
+            }
+          >
+            <FontAwesomeIcon icon={["fab", "instagram"]} />
           </span>
         </div>
       </div>

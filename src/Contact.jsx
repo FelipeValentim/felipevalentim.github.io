@@ -13,7 +13,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact fade">
       <h1>Contate-me</h1>
       <div className="communication">
         <div>

@@ -33,8 +33,9 @@ function App() {
   };
 
   React.useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
-  });
+  }, []);
 
   return (
     <div className="main-container">
@@ -48,11 +49,11 @@ function App() {
 
           {page == 3 && <Experience />}
           {page == 4 && <Contact />} */}
-          <NavBar isMobile={isMobile} />
-          <Home />
-          <About />
-          <Experience />
-          <Contact />
+          <NavBar isMobile={isMobile} setPage={setPage} page={page} />
+          {page == 1 && <Home />}
+          {page == 2 && <About />}
+          {page == 3 && <Experience />}
+          {page == 4 && <Contact />}
           <SnackBar />
         </div>
       )}

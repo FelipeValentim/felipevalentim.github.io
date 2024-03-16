@@ -4,7 +4,6 @@
   align-items: center;
   gap: 4rem;
   margin-top: 2rem;
-  margin-bottom: 20rem;
 }
 
 .home .info {
@@ -74,8 +73,6 @@
 .home .photo-container img {
   max-width: 100%;
   height: auto;
-  position: absolute;
-  bottom: 0;
 }
 /* PHOTO */
 

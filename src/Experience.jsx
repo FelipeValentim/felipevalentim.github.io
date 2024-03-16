@@ -4,7 +4,7 @@ import { faCircle } from "@fortawesome/free-regular-svg-icons";
 
 const Experience = () => {
   return (
-    <div className="experience">
+    <div className="experience fade">
       <div className="education">
         <h1>Educação</h1>
         <div className="experience-section">

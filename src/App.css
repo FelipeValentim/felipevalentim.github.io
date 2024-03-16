@@ -4,6 +4,30 @@
   box-sizing: border-box;
   font-family: "roboto";
 }
+body {
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 0.4rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 #root h1 {
   font-family: "Madimi One", sans-serif;

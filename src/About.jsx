@@ -15,7 +15,7 @@ library.add(faGithub, faFacebook);
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about fade">
       <div className="programming-image">
         <img src={programming} />
       </div>
