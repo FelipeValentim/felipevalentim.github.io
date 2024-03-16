@@ -25,6 +25,17 @@ function App() {
     return <div className="loading">{View}</div>;
   };
 
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 1468);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize);
+  });
+
   return (
     <div className="main-container">
       {isLoading ? (
@@ -37,7 +48,7 @@ function App() {
 
           {page == 3 && <Experience />}
           {page == 4 && <Contact />} */}
-          <NavBar />
+          <NavBar isMobile={isMobile} />
           <Home />
           <About />
           <Experience />

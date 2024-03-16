@@ -8,12 +8,11 @@ import {
   faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import {} from "@fortawesome/free-regular-svg-icons";
 
 // eslint-disable-next-line react/prop-types
-const NavBar = ({ page, setPage }) => {
+const NavBar = ({ page, setPage, isMobile }) => {
   return (
-    <div className="nav-bar">
+    <div className={isMobile ? "nav-bar mobile" : "nav-bar"}>
       <div className="menu">
         <span onClick={() => setPage(1)}>
           <FontAwesomeIcon icon={faHome} />

@@ -36,7 +36,15 @@ const About = () => {
           <li>typescript</li>
           <li>xamarin</li>
         </ul>
-        <div className="download-cv">
+        <div
+          className="download-cv"
+          onClick={() =>
+            window.open(
+              "https://drive.usercontent.google.com/u/0/uc?id=1lVgBm80sTnW4R-DODmtW64FgwJCKhFkT&export=download",
+              "_blank"
+            )
+          }
+        >
           Baixar Currículo &nbsp;&nbsp;
           <FontAwesomeIcon icon={faDownload} />
         </div>
