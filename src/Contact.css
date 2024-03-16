@@ -9,7 +9,7 @@
 
 .contact .communication {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   justify-items: center;
   gap: 4rem;
   text-align: center;
@@ -18,9 +18,10 @@
 
 .contact .communication div {
   background-color: #202026;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   transition: all ease-in-out 0.3s;
+  border-radius: 0.4rem;
 }
 
 .contact .communication div:hover {
@@ -64,3 +65,30 @@
 .contact .report .map > div > div {
   border-radius: 0.4rem;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .contact .communication {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 867px) {
+  .contact .communication {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact .communication div:last-child {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 598px) {
+  .contact .communication {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .report {
+    grid-template-columns: 1fr;
+  }
+}
+/* RESPONSIVE */

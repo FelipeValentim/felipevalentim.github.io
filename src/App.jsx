@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import { useLottie } from "lottie-react";
 import loading from "./loading.json";
 import React from "react";
+import { SnackBar } from "./SnackBar";
 
 function App() {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -41,6 +42,7 @@ function App() {
           <About />
           <Experience />
           <Contact />
+          <SnackBar />
         </div>
       )}
     </div>

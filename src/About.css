@@ -78,3 +78,40 @@
 .services .services-items .service-item.database svg {
   color: #ed7256;
 }
+
+/* RESPONSIVE */
+@media (max-width: 1280px) {
+  .about .programming-image img {
+    height: 300px;
+  }
+  .about {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about .programming-image img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 867px) {
+  .about {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .services .services-items {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services .service-item.database {
+    grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 667px) {
+  .services .services-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RESPONSIVE */

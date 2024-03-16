@@ -2,11 +2,14 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLocation, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Contact.css";
-import Map from "./Map";
+import GoogleMap from "./GoogleMap";
+import { Toast } from "./SnackBar";
 
 const Contact = () => {
   const sendMail = (e) => {
     e.preventDefault();
+
+    Toast("Envio não implementado");
   };
 
   return (
@@ -41,7 +44,7 @@ const Contact = () => {
           <button onClick={sendMail}>Enviar</button>
         </form>
         <div className="map">
-          <Map />
+          <GoogleMap />
         </div>
       </div>
     </div>

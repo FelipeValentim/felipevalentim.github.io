@@ -78,3 +78,52 @@
   bottom: 0;
 }
 /* PHOTO */
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .home {
+    gap: 1rem;
+  }
+  .home .info .name {
+    font-size: 3rem;
+  }
+  .home .info .profession {
+    font-size: 1.4rem;
+  }
+
+  .home .photo-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .home .photo-container {
+    grid-row: 1;
+    width: 350px;
+    height: 350px;
+  }
+
+  .home .info {
+    align-items: center;
+    width: 100%;
+  }
+  .home .info .presentation {
+    align-self: initial;
+  }
+}
+@media (max-width: 480px) {
+  .home .photo-container {
+    width: 250px;
+    height: 250px;
+  }
+  .home .info .name {
+    font-size: 2rem;
+  }
+}
+
+/* RESPONSIVE */
